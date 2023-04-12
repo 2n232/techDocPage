@@ -2,88 +2,227 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <nav id="navbar">
-    <header>Navigation bar</header>
-  <ul id="navbar ul">
-    <li>
-    <a class="nav-link" href="#Introduction1">Introduction1</a>
-    </li>
-    <li>
-    <a class="nav-link" href="#Introduction2">Introduction2</a>
-    </li>
-    <li>
-    <a class="nav-link" href="#Introduction5">Introduction3</a>
-    </li>
-    <li>
-    <a class="nav-link" href="#Introduction4">Introduction4</a>
-    </li>
-    <li>
-    <a class="nav-link" href="#Introduction5">Introduction5</a>
-    </li>
-  </ul>
-  <div id="main-doc">
-    <section class="main-section" id="Introduction1">
-      <header>Introduction1</header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac orci phasellus egestas tellus.</p>
-      <p>Test with introduction1</p>
-      <code>code1</code>
-      <code>code1</code>
-      <ul>
-        <li>list1</li>
-        <li>list2</li>
-      </ul>
-    </section>
-    <section class="main-section" id="Introduction2">
-      <header>Introduction2</header>
-      <p>Test with introduction2</p>
-      <p>Test with introduction2</p>
-      <code></code>
-      <code></code>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-    <section class="main-section" id="Introduction3">
-      <header>Introduction3</header>
-      <p>Test with introduction3</p>
-      <p>Test with introduction3</p>
-      <code></code>
-      <code></code>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-    <section class="main-section" id="Introduction4">
-      <header>Introduction4</header>
-      <p>Test with introduction4</p>
-      <p>Test with introduction4</p>
-      <code></code>
-      <code></code>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-    <section class="main-section" id="Introduction5">
-     <header>Introduction5</header>
-     <p>Test with introduction5</p>
-     <p>Test with introduction5</p> 
-     <code></code>
-      <code></code>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </section>
-  </div>
+    <header>Microchip</header>
+    <ul id="navbar ul">
+      <li>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+      <li>
+      <a class="nav-link" href="#Overview">Overview</a>
+      </li>
+      <li>
+      <a class="nav-link" href="#Resources">Resources</a>
+      </li>
+      <li>
+      <a class="nav-link" href="#About_Code_Examples">About Code Examples</a>
+      </li>
+      <li>
+      <a class="nav-link" href="#Capacitive_Touch_Sensing">Capacitive Touch Sensing</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Interrupts">Interrupts</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#External_Interrupts">External Interrupts</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Customer_Support">Customer Support</a>
+      </li>
+    </ul>
   </nav>
+  <div id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>The <code>ATmega48A/PA/88A/PA/168A/PA/328/P</code> is a low power, <code>CMOS 8-bit</code> microcontrollers based on the
+        AVR® enhanced RISC architecture. By executing instructions in a single clock cycle, the devices achieve
+        CPU throughput approaching one million instructions per second (MIPS) per megahertz, allowing the system
+        designer to optimize power consumption versus processing speed.</p>
+      <p><strong>Features</strong></p>
+      <ul>
+        <li>
+          High Performance, Low Power <code>AVR® 8-Bit Microcontroller Family</code>
+        </li>
+        <li>
+          Advanced RISC Architecture
+          <ul>
+            <li>131 Powerful Instructions – Most Single Clock Cycle Execution</li>
+            <li>32 x 8 General Purpose Working Registers</li>
+            <li>Fully Static Operation</li>
+            <li>Up to 20 MIPS Throughput at 20MHz</li>
+            <li>On-chip 2-cycle Multiplier</li>
+          </ul>
+        </li>
+        <li>
+          High Endurance Non-volatile Memory Segments
+          <ul>
+            <li>4/8/16/32KBytes of In-System Self-Programmable Flash program memory</li>
+            <li>256/512/512/1KBytes EEPROM</li>
+            <li>512/1K/1K/2KBytes Internal SRAM</li>
+            <li>Write/Erase Cycles: 10,000 Flash/100,000 EEPROM</li>
+            <li>Data retention: 20 years at 85°C/100 years at 25°C</li>
+            <li>Optional Boot Code Section with Independent Lock Bits
+              <ul>
+                <li>In-System Programming by On-chip Boot Program</li>
+                <li>True Read-While-Write Operation</li>
+              </ul>
+            </li>
+            <li>QTouch® library support
+              <ul>
+                <li>Capacitive touch buttons, sliders and wheels</li>
+                <li>QTouch and QMatrix™ acquisition</li>
+                <li>Up to 64 sense channels</li>
+              </ul>
+            </li>
+            <li>
+              Peripheral Features
+              <ul>
+                <li>Two 8-bit Timer/Counters with Separate Prescaler and Compare Mode</li>
+                <li>One 16-bit Timer/Counter with Separate Prescaler, Compare Mode, and Capture Mode</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="Overview">
+      <header>Overview</header>
+      <p>The <code>ATmega48A/PA/88A/PA/168A/PA/328/P</code> is a low-power CMOS 8-bit microcontroller based on the AVR
+        enhanced RISC architecture. By executing powerful instructions in a single clock cycle, the
+        <code>ATmega48A/PA/88A/PA/168A/PA/328/P</code> achieves throughputs approaching 1 MIPS per MHz allowing the
+        system designer to optimize power consumption versus processing speed.</p>
+      <p>The AVR core combines a rich instruction set with 32 general purpose working registers. All the 32 registers are
+        directly connected to the Arithmetic Logic Unit (ALU), allowing two independent registers to be accessed in one
+        single instruction executed in one clock cycle. The resulting architecture is more code efficient while achieving
+        throughputs up to ten times faster than conventional CISC microcontrollers.</p>
+      <p>Processors:</p>
+        <ul>
+        <li>ATmega48A   - Flash:4KBytes  EEPROM:256Bytes RAM:512Bytes Interruptor:1 instruction word/vector</li>
+        <li>ATmega48PA  - Flash:4KBytes  EEPROM:256Bytes RAM:512Bytes Interruptor:1 instruction word/vector</li>
+        <li>ATmega88A   - Flash:8KBytes  EEPROM:512Bytes RAM:1KBytes  Interruptor:1 instruction word/vector</li>
+        <li>ATmega88PA  - Flash:8KBytes  EEPROM:512Bytes RAM:1KBytes  Interruptor:1 instruction word/vector</li>
+        <li>ATmega168A  - Flash:16KBytes EEPROM:512Bytes RAM:1KBytes  Interruptor:2 instruction word/vector</li>
+        <li>ATmega168PA - Flash:16KBytes EEPROM:512Bytes RAM:1KBytes  Interruptor:2 instruction word/vector</li>
+        <li>ATmega328   - Flash:32KBytes EEPROM:1KBytes  RAM:2KBytes  Interruptor:2 instruction word/vector</li>
+        <li>ATmega328P  - Flash:32KBytes EEPROM:1KBytes  RAM:2KBytes  Interruptor:2 instruction word/vector</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Resources">
+      <header>Resources</header>
+      <p>A comprehensive set of development tools, application notes and data sheets are available for download on
+        <a href="https://www.microchip.com" target="_blank">www.microchip.com</a></p>
+    </section>
+    <section class="main-section" id="About_Code_Examples">
+      <header>About Code Examples</header>
+      <p>This documentation contains simple code examples that briefly show how to use various parts of the device.
+        These code examples assume that the part specific header file is included before compilation. Be aware that not
+        all C compiler vendors include bit definitions in the header files and interrupt handling in C is compiler
+        dependent. Confirm with the C compiler documentation for more details.</p>
+      <p>For I/O Registers located in extended I/O map, <code>“IN”, “OUT”, “SBIS”, “SBIC”, “CBI”, and “SBI”</code> instructions must
+        be replaced with instructions that allow access to extended I/O. Typically “LDS” and “STS” combined with
+        <code>“SBRS”, “SBRC”, “SBR”, and “CBR”</code>.</p>
+    </section>
+    <section class="main-section" id="Capacitive_Touch_Sensing">
+     <header>Capacitive Touch Sensing</header>
+     <p>The QTouch Library provides a simple to use solution to realize touch sensitive interfaces on most AVR
+      microcontrollers. The <code>QTouch Library</code> includes support for the QTouch and QMatrix™ acquisition methods.</p>
+     <p>Touch sensing can be added to any application by linking the appropriate <code>QTouch Library</code> for the AVR
+      Microcontroller. This is done by using a simple set of APIs to define the touch channels and sensors, and then
+      calling the touch sensing APIs to retrieve the channel information and determine the touch sensor states.</p> 
+     <p>The QTouch Library is FREE and downloadable from the Microchip website at the following location
+      <a href="http://www.microchip.com" target="_blank">http://www.microchip.com</a> . For implementation details and other information, refer to the QTouch Library User
+      Guide - also available for download from the Microchip website.</p>
+    </section>
+    <section class="main-section" id="Interrupts">
+      <header>Interrupts</header>
+      <p>This section describes the specifics of the interrupt handling as performed in
+        <code>ATmega48A/PA/88A/PA/168A/PA/328/P</code></p>
+      <p>The interrupt vectors in ATmega 48A/48PA, ATmega88A/88PA, ATmega168A/168PA and ATmega328/328P
+        are generally the same, with the following differences:</p>
+      <ul>
+        <li>Each Interrupt Vector occupies two instruction words in ATmega168A/168PA and ATmega328/328P, and
+          one instruction word in ATmega 48A/48PA and ATmega88A/88PA.</li>
+        <li>ATmega 48A/48PA does not have a separate Boot Loader Section. In ATmega88A/88PA,
+          ATmega168A/168PA and ATmega328/328P, the Reset Vector is affected by the BOOTRST fuse, and the
+          Interrupt Vector start address is affected by the IVSEL bit in MCUCR.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="External_Interrupts">
+      <header>External Interrupts</header>
+      <p>The External Interrupts are triggered by the INT0 and INT1 pins or any of the PCINT23...0 pins. Observe that, if
+        enabled, the interrupts will trigger even if the INT0 and INT1 or PCINT23...0 pins are configured as outputs. This
+        feature provides a way of generating a software interrupt. The pin change interrupt PCI2 will trigger if any
+        enabled PCINT[23:16] pin toggles. The pin change interrupt PCI1 will trigger if any enabled PCINT[14:8] pin
+        toggles. The pin change interrupt PCI0 will trigger if any enabled PCINT[7:0] pin toggles. The PCMSK2,
+        PCMSK1 and PCMSK0 Registers control which pins contribute to the pin change interrupts. Pin change
+        interrupts on PCINT23...0 are detected asynchronously. This implies that these interrupts can be used for
+        waking the part also from sleep modes other than Idle mode.</p>
+      <p>The External Interrupts can be triggered by a falling or rising edge or a low level. This is set up as indicated in
+        the specification for the External Interrupt Control Registers – EICRA (INT2:0). When the external interrupt is
+        enabled and is configured as level triggered, the interrupt will trigger as long as the pin is held low. Low level
+        interrupts and the edge interrupt on INT2:0 are detected asynchronously. This implies that these interrupts can
+        be used for waking the part also from sleep modes other than Idle mode. The I/O clock is halted in all sleep
+        modes except Idle mode.</p>
+    </section>
+    <section class="main-section" id="Customer_Support">
+      <header>Customer Support</header>
+      <h3>THE MICROCHIP WEBSITE</h3>
+      <P>Microchip provides online support via our WWW site at
+        <a href="https://www.microchip.com" target="_blank">www.microchip.com</a> . This website is used as a means
+        to make files and information easily available to
+        customers. Accessible by using your favorite Internet
+        browser, the website contains the following information:</P>
+        <ul>
+          <li><strong>Product Support</strong> – Data sheets and errata,
+            application notes and sample programs, design
+            resources, user’s guides and hardware support
+            documents, latest software releases and archived
+            software</li>
+          <li><strong>General Technical Support</strong> – Frequently Asked
+            Questions (FAQ), technical support requests,
+            online discussion groups, Microchip consultant
+            program member listing</li>
+          <li><strong>Business of Microchip</strong> – Product selector and
+            ordering guides, latest Microchip press releases,
+            listing of seminars and events, listings of
+            Microchip sales offices, distributors and factory
+            representatives</li>
+        </ul>
+        <h3>CUSTOMER CHANGE NOTIFICATION
+          SERVICE</h3>
+        <p>Microchip’s customer notification service helps keep
+          customers current on Microchip products. Subscribers
+          will receive e-mail notification whenever there are
+          changes, updates, revisions or errata related to a
+          specified product family or development tool of interest</p>
+        <p>To register, access the Microchip website at
+          <a href="www.microchip.com" target="_blank">www.microchip.com</a> . Under “Support”, click on
+          “Customer Change Notification” and follow the
+          registration instructions.</p>
+        <h3>CUSTOMER SUPPORT</h3>
+        <p>Users of Microchip products can receive assistance
+          through several channels:</p>
+          <ul>
+            <li>Distributor or Representative</li>
+            <li>Local Sales Office</li>
+            <li>Field Application Engineer (FAE)</li>
+            <li>Technical Support</li>
+          </ul>
+          <p>Customers should contact their distributor,
+            representative or Field Application Engineer (FAE) for
+            support. Local sales offices are also available to help
+            customers. A listing of sales offices and locations is
+            included in the back of this document.</p>
+          <p><strong>Technical support is available through the website
+            at:</strong> <a href="http://microchip.com/support" target="_blank">http://microchip.com/support</a></p>
+        </section>
+  </div>
+  
   </body>
 </html>

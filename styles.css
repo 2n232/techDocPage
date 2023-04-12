@@ -1,53 +1,83 @@
 body, html{
-  background-color: #ffffff;
+  background-color: #cbf5e7;
   color: #4d4e53;
   min-width: 290px;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  /*border-right: solid;*/
+  /*border-color: white;*/
+  min-width: 200px;
+
+}
+header{
+  color: black;
+  margin: 10px;
+  text-align: center;
+}
+#navbar ul{
+  /*border: 1px solid;*/
+  height: 207px;
+}
+#nav-link {
+  color: #4d4e53;
+  border-top: 1px solid;
+  position: relative;
+  width: 100%;
+}
+#main-doc{
+  position: absolute;
+  margin-left: 250px;
+  margin-right: 0;
+  padding: 20px;
+  margin-bottom: 110px;
+  background-color:rgb(235, 240, 235);
+}
+.main-section{
+
   }
-  #navbar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    border-right: solid;
-    border-color: white;
-    min-width: 290px;
+code {
+  /* display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px; */
+  font-size: 1.15rem;
+}
+
+li {
   
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+#navbar li {
+  color:#4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+}
+
+@media (max-width : 800px) {
+  #navbar {
+    width: 100px;
   }
-  header{
-    color: balck;
-    margin: 10px;
-    text-align: center;
+  #main-doc {
+    margin-left: 200px;
   }
-  #navbar ul{
-    border: 1px solid;
-    hieght: 207px;
-  }
-  #nav-link {
-    color: #4d4e53;
-    border-top: 1px solid;
-    position: relative;
-    width: 100%;
-  }
-  #main-doc{
-    position: absolute;
-    margin-left: 310px;
-    padding: 20px;
-    margin-bottom: 110px;
-  }
-  .main-section{
-    background-color:green
-  }
-  code {
-    display: block;
-    text-align: left;
-    white-space: pre-line;
-    position: relative;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 2;
-    background-color: #f7f7f7;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-  }
+
+}
+
+li:: {
+  border-bottom: 1px solid;
+}
