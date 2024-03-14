@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body, html{
   background-color: #cbf5e7;
   color: #4d4e53;
@@ -15,9 +19,11 @@ body, html{
 
 }
 header{
-  color: black;
-  margin: 10px;
+  color: rgb(2, 49, 25);
+  margin: 24px;
   text-align: center;
+  font-weight: bold;
+  font-size: 24px;
 }
 #navbar ul{
   /*border: 1px solid;*/
@@ -37,21 +43,8 @@ header{
   margin-bottom: 110px;
   background-color:rgb(235, 240, 235);
 }
-.main-section{
 
-  }
 code {
-  /* display: block;
-  text-align: left;
-  white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px; */
   font-size: 1.15rem;
 }
 
@@ -78,6 +71,23 @@ li {
 
 }
 
-li:: {
-  border-bottom: 1px solid;
+figure {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: rgb(2, 49, 25);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p a {
+  color: black;
+  font-size: 16px;
+  font-style: italic;
 }
